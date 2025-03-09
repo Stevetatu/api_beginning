@@ -1,11 +1,10 @@
 from django.db import models
 
 # recipe table
-class Recipe(models.Model):
+class Student(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField()
-    ingredients = models.TextField()
-    directions = models.TextField()
+    student_id = models.CharField(max_length=50)
+    branch = models.CharField(max_length=60)
 
     def __str__(self):
         return self.name
